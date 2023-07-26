@@ -1,9 +1,9 @@
+import defaultTheme from "tailwindcss/defaultTheme";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -11,6 +11,31 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      supports: {
+        'dvw': 'width: 100dvw',
+        'dvh': 'height: 100dvh',
+      },
+      width: {
+        'dscreen': '100dvw',
+      },
+      minWidth: {
+        'dscreen': '100dvw',
+      },
+      maxWidth: {
+        'dscreen': '100dvw',
+      },
+      height: {
+        'dscreen': '100dvh'
+      },
+      minHeight: {
+        'dscreen': '100dvh'
+      },
+      maxHeight: {
+        'dscreen': '100dvh'
+      },
+      fontFamily: {
+        "playfair-display": ["Playfair Display", ...defaultTheme.fontFamily.serif],
       },
     },
   },
