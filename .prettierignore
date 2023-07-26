@@ -1,0 +1,4 @@
+# build files, etc.
+/.next
+/node_modules
+/.gitignore
